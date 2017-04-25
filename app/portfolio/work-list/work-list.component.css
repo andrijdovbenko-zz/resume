@@ -1,0 +1,14 @@
+.list-group .list-group-item{
+  padding: 10px;
+}
+.list-group-item p{
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.img-responsive{
+  height: 50px;
+  float: right;
+}
