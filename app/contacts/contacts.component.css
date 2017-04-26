@@ -1,0 +1,8 @@
+iframe{
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+div:first-child{
+  text-align: center;
+}

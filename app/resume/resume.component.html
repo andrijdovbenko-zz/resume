@@ -3,4 +3,17 @@
 </div>
 <div class="col-md-9">
   <h1>{{person.name}}</h1>
+  <p><b>Date of birth:</b> {{person.dateOfBirth}}</p>
+  <p><b>Skils:</b></p>
+  <ul>
+    <li *ngFor="let skill of person.skils">{{skill}}</li>
+  </ul>
+  <p><b>Education:</b></p>
+  <ul>
+    <li *ngFor="let education of person.educations">{{education}}</li>
+  </ul>
+  <p><b>Certifications:</b></p>
+  <ul>
+    <li *ngFor="let certification of person.certifications">{{certification}}</li>
+  </ul>
 </div>

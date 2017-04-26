@@ -1,0 +1,14 @@
+img[alt="photo"]{
+  width: auto;
+  max-height: 250px;
+  border-radius: 150px;
+}
+ul{
+  list-style-type: '- ';
+}
+b{
+  font-size: 18px;
+}
+li{
+  font-size: 14px;
+}

@@ -1,8 +1,8 @@
-<div class="col-md-12">
+<div>
   <ul class="nav nav-pills">
-    <li role="presentation"><a [routerLink]="['']" routerLinkActive="active">Home</a></li>
-    <li role="presentation"><a [routerLink]="['portfolio']">Portfolio</a></li>
-    <li role="presentation"><a [routerLink]="['contacts']">Contacts</a></li>
+    <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']" >Home</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['portfolio']">Portfolio</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['contacts']">Contacts</a></li>
   </ul>
 </div>
 
