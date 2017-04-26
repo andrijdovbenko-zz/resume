@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PersonService} from '../person.service';
 
 @Component({
   selector: 'cv-contacts',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ContactsComponent {
   title = 'Conatact Me';
+  person;
+  constructor(private personServise:PersonService){}
+  ngOnInit(){
+    this.person=this.personServise.getPersonDetail();
+  }
+
 }
