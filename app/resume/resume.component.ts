@@ -15,7 +15,7 @@ export class ResumeComponent {
     email: 'andrijdovbenko@gmail.com',
     skype: 'dar141290',
     github: 'https://github.com/andrijdovbenko',
-    skils: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
+    skils: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Angular'],
     languages: ['Ukrainian', 'English'],
     certifications: [
       'Date of studying: May 16 – June 13, 2016; HTML5 Applications Development Fundamentals (HTML5/CSS3/JavaScript). SoftServe University.',
