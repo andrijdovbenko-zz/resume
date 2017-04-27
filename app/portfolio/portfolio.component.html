@@ -9,8 +9,16 @@
   </ul>
 </div>
 <div class="col-md-6">
-  <div class="work-detail">
+  <div class="work-detail" *ngIf="selectedWork">
     <img class="img-responsive" src="{{selectedWork?.imgPath}}"/>
-    <h3>{{selectedWork?.name}}</h3>
+    <h2>{{selectedWork?.name}}</h2>
+    <div>
+      <p><b>Used languages and technologies:</b></p>
+      <p><span *ngFor="let technology of selectedWork?.technologies">{{technology}}; </span></p>
+    </div>
+    <div>
+      <p><b>Link:</b> <a href="{{selectedWork?.link}}">{{selectedWork?.link}}</a></p>
+    </div>
+
   </div>
 </div>
