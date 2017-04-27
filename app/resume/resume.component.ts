@@ -6,13 +6,13 @@ import {PersonService} from '../person.service';
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent {
+export class ResumeComponent implements OnInit {
   person;
 
-  constructor(private personService:PersonService){}
+  constructor(private personService: PersonService) {}
 
-  ngOnInit(){
-    this.person=this.personService.getPersonDetail();
+  ngOnInit() {
+    this.person = this.personService.getPersonDetail();
   }
 }
 

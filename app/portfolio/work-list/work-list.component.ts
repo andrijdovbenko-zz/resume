@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Work } from '../work';
+import {WorkService} from '../work.service';
 
 @Component({
   selector: 'cv-work-list',
   templateUrl: './work-list.component.html',
   styleUrls: [`./work-list.component.css`]
 })
-export class WorkListComponent {
-  works: Work[] = [
-    new Work('eleoquii', 'http://edu.cbsystematics.com/Content/Education/FrontEnd/images/angular.png'),
-    new Work('weatherforecast', 'http://edu.cbsystematics.com/Content/Education/FrontEnd/images/angular.png')
-  ];
+export class WorkListComponent implements OnInit {
+  works: Work[] = [];
+  constructor(private workservice: WorkService) {}
+  ngOnInit() {
+    this.works = this.workservice.gerWorks();
+  }
 }
