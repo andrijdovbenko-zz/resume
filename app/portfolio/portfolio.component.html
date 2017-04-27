@@ -1,8 +1,16 @@
 
 <div class="col-md-12"><h1>My Works</h1></div>
 <div class="col-md-6">
-  <cv-work-list></cv-work-list>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let work of works" (click)="getSelectedWork(work)">
+      <img class="img-responsive" src="{{work.imgPath}}"/>
+      <p>{{work.name}}</p>
+    </li>
+  </ul>
 </div>
 <div class="col-md-6">
-  <cv-work-detail></cv-work-detail>
+  <div class="work-detail">
+    <img class="img-responsive" src="{{selectedWork?.imgPath}}"/>
+    <h3>{{selectedWork?.name}}</h3>
+  </div>
 </div>

@@ -9,8 +9,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HeaderComponent } from './header/header.component';
 import { routing } from './routing';
-import { WorkListComponent } from './portfolio/work-list/work-list.component';
-import { WorkDetailComponent } from './portfolio/work-detail/work-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,7 @@ import { WorkDetailComponent } from './portfolio/work-detail/work-detail.compone
     ResumeComponent,
     PortfolioComponent,
     ContactsComponent,
-    HeaderComponent,
-    WorkListComponent,
-    WorkDetailComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
