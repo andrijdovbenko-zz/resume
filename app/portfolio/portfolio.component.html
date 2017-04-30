@@ -1,6 +1,6 @@
 
 <div class="col-md-12"><h1>My Works</h1></div>
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
   <ul class="list-group">
     <li class="list-group-item" *ngFor="let work of works" (click)="getSelectedWork(work)">
       <img class="img-responsive" src="{{work.imgPath}}"/>
@@ -8,7 +8,7 @@
     </li>
   </ul>
 </div>
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
   <div class="work-detail" *ngIf="selectedWork">
     <img class="img-responsive" src="{{selectedWork?.imgPath}}"/>
     <h2>{{selectedWork?.name}}</h2>

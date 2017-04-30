@@ -1,6 +1,6 @@
 img[alt="photo"]{
-  width: auto;
-  max-height: 250px;
+  max-width: 250px;
+  height: auto;
   border-radius: 150px;
 }
 ul{
@@ -11,4 +11,15 @@ b{
 }
 li{
   font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  h1{
+    text-align: center;
+  }
+
+  img[alt="photo"]{
+    display: block;
+    margin: 0 auto;
+  }
 }

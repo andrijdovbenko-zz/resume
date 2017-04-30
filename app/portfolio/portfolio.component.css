@@ -5,6 +5,11 @@ h1{
 .list-group .list-group-item{
   padding: 10px;
 }
+
+.list-group .list-group-item:hover {
+  background-color: lightblue;
+}
+
 .list-group-item p, .work-detail h2{
   text-transform: uppercase;
   line-height: 50px;
@@ -21,3 +26,34 @@ h1{
   height: auto;
   width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+  .list-group .list-group-item{
+    padding: 0 10px;
+    display: inline-block;
+    width: 33%;
+  }
+
+  .list-group img.img-responsive{
+    display: none;
+  }
+
+  .list-group-item p{
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .list-group .list-group-item {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .list-group .list-group-item {
+    display: block;
+    width: 100%;
+  }
+}
+

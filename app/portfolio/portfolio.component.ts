@@ -12,9 +12,13 @@ export class PortfolioComponent implements OnInit {
   works: Work[] = [];
   constructor(private workservice: WorkService) {}
   ngOnInit() {
-    this.works = this.workservice.gerWorks();
-  }
-  getSelectedWork(workselcted: Work){
+    this.workservice.getWorks()
+      .subscribe((data) => {
+        this.works = data.works;
+        console.log(this.works);
+      });
+  };
+  getSelectedWork(workselcted: Work) {
     this.selectedWork = workselcted;
   }
 }

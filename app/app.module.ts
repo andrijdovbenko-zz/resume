@@ -9,6 +9,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HeaderComponent } from './header/header.component';
 import { routing } from './routing';
+import { PersonService } from './person.service';
+import { WorkService } from './portfolio/work.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { routing } from './routing';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [PersonService, WorkService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

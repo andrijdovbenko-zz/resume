@@ -1,0 +1,34 @@
+{
+  "works" : [
+    {
+      "name": "eleoquii",
+      "link": "https://github.com/andrijdovbenko/eleoquii",
+      "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+      "imgPath": "../assets/eleoquii.jpg"
+    },
+    {
+      "name": "weatherforecast",
+      "link": "https://github.com/andrijdovbenko/weather-forecast",
+      "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
+      "imgPath": "../assets/weatherforecast.jpg"
+    },
+    {
+      "name": "appz",
+      "link": "https://github.com/andrijdovbenko/appz",
+      "technologies": ["HTML", "CSS", "Bootstrap"],
+      "imgPath": "../assets/appz.jpg"
+    },
+    {
+      "name": "resume",
+      "link": "https://andrijdovbenko.github.io",
+      "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "Angular 4"],
+      "imgPath": "../assets/resume.jpg"
+    },
+    {
+      "name": "jetro",
+      "link": "https://github.com/andrijdovbenko/jetro",
+      "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
+      "imgPath": "../assets/jetro.jpg"
+    }
+  ]
+}
