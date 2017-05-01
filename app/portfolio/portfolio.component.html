@@ -3,7 +3,7 @@
 <div class="col-md-6 col-sm-6">
   <ul class="list-group">
     <li class="list-group-item" *ngFor="let work of works" (click)="getSelectedWork(work)">
-      <img class="img-responsive" src="{{work.imgPath}}"/>
+      <img class="img-responsive" src="{{work.imgMinPath}}"/>
       <p>{{work.name}}</p>
     </li>
   </ul>
