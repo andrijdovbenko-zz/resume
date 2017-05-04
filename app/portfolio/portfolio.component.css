@@ -5,6 +5,9 @@ h1{
 .list-group .list-group-item{
   padding: 10px;
 }
+.list-group .list-group-item:hover{
+  background-color: lightblue;
+}
 .list-group-item p, .work-detail h2{
   text-transform: uppercase;
   line-height: 50px;
