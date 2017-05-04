@@ -1,19 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Work } from './work';
+import { Http, Response } from '@angular/http';
+import 'rxjs/Rx';
 
 @Injectable()
 export class WorkService {
 
-  works: Work[] = [
-    new Work('eleoquii', 'https://github.com/andrijdovbenko/eleoquii', ['HTML', 'CSS', 'JavaScript', 'jQuery'], '../assets/eleoquii.jpg'),
-    new Work('weatherforecast', 'https://github.com/andrijdovbenko/weather-forecast', ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery'], '../assets/weatherforecast.jpg'),
-    new Work('appz', 'https://github.com/andrijdovbenko/appz', ['HTML', 'CSS', 'Bootstrap'], '../assets/appz.jpg'),
-    new Work('resume', 'https://andrijdovbenko.github.io', ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Angular 4'], '../assets/resume.jpg'),
-    new Work('jetro', 'https://github.com/andrijdovbenko/jetro', ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery'], '../assets/jetro.jpg')
-  ];
+  constructor(private http: Http) { }
 
-  gerWorks() {
-    return this.works;
+  getWorks() {
+    return this.http.get('./assets/works.json')
+      .map((response: Response) => response.json());
   }
 
 }

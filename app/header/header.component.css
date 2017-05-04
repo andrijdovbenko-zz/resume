@@ -14,3 +14,13 @@ ul li{
 ul li>a{
   font-size: 16px;
 }
+
+@media screen and (max-width: 480px) {
+  ul li{
+    margin: 0 5px;
+  }
+
+  ul li>a{
+    font-size: 14px;
+  }
+}

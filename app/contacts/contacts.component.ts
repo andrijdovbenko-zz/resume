@@ -6,12 +6,17 @@ import { PersonService} from '../person.service';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })
-export class ContactsComponent {
+export class ContactsComponent implements OnInit {
   title = 'Conatact Me';
-  person;
-  constructor(private personServise:PersonService){}
-  ngOnInit(){
-    this.person=this.personServise.getPersonDetail();
-  }
+  person = {};
+  constructor(private personService: PersonService) {}
+
+  ngOnInit() {
+    this.personService.getPersonDetail()
+      .subscribe((data) => {
+        this.person = data;
+        console.log(this.person);
+      });
+  };
 
 }

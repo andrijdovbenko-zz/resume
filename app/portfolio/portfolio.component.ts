@@ -8,14 +8,29 @@ import {WorkService} from './work.service';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  selectedWork: Work;
   works: Work[] = [];
+  selectedWork: Work;
   constructor(private workservice: WorkService) {}
   ngOnInit() {
-    this.works = this.workservice.gerWorks();
+    this.workservice.getWorks()
+      .subscribe((data) => {
+        this.works = data.works;
+        this.selectedWork = this.works[0];
+        this.works[0].selected = true;
+      });
+  };
+  getSelectedWork(workselected: Work) {
+    this.selectedWork = workselected;
+    this.selectedWorkHighlight();
   }
-  getSelectedWork(workselcted: Work){
-    this.selectedWork = workselcted;
+  selectedWorkHighlight() {
+    for (let i = 0; i < this.works.length; i++ ) {
+      if (this.works[i].name === this.selectedWork.name) {
+        this.works[i].selected = true;
+      } else {
+        this.works[i].selected = false;
+      }
+    }
   }
 }
 
