@@ -3,12 +3,15 @@ img[alt="photo"]{
   height: auto;
   border-radius: 150px;
 }
+
 ul{
   list-style-type: '- ';
 }
+
 b{
   font-size: 18px;
 }
+
 li{
   font-size: 14px;
 }
